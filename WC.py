@@ -32,7 +32,6 @@ def wc(f, arg):
 
 if __name__ == '__main__':
     args = sys.argv
-    print(args)
     if os.path.isfile(args[2]):
         wc(args[2], args)
     elif os.path.isdir(args[2]):
