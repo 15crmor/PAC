@@ -41,5 +41,5 @@ if __name__ == '__main__':
             if os.path.splitext(file)[1] == '.py':
                 wc(file, args)
     else:
-        print("没有此文件")
+        print("没有此文件，请重新运行此程序")
 
