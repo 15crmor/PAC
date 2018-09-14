@@ -28,8 +28,7 @@ def wc(f, arg):
         print(f + "文件代码行为：", code_lines_num)
         print("注释行为：", comm_lines_num)
         print("空行为：", space_lines_num)
-    else:
-        print("没有此文件")
+
 
 if __name__ == '__main__':
     args = sys.argv
@@ -41,4 +40,6 @@ if __name__ == '__main__':
         for file in file_list:
             if os.path.splitext(file)[1] == '.py':
                 wc(file, args)
+    else:
+        print("没有此文件")
 
